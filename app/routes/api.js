@@ -35,6 +35,7 @@ module.exports = function(app, express) {
 
 		});
 
+		res.send({message: 'worked'})
 	});
 
 	// route to authenticate a user (POST http://localhost:8080/api/authenticate)

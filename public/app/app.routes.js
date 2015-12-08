@@ -17,7 +17,11 @@ angular.module('app.routes', ['ngRoute'])
 		})
 
 		// show all users
-
+		.when('/users', {
+			templateUrl: 'app/views/pages/users/all.html',
+			controller: 'userController',
+			controllerAs: 'user'
+		})
 
 		// form to create a new user
 		// same view as edit page

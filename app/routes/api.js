@@ -33,8 +33,8 @@ module.exports = function(app, express) {
 				user.save();
 			}
 
+			res.json({ message: 'hooray! it worked!' });
 		});
-
 	});
 
 	// route to authenticate a user (POST http://localhost:8080/api/authenticate)
